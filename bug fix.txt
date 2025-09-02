@@ -50,7 +50,7 @@ local Mouse = LocalPlayer:GetMouse()
 local Camera = workspace.CurrentCamera
 
 local function getfile(name)
-    local repo = "https://raw.githubusercontent.com/SWIMHUBISWIMMING/swimhub/main/"
+    local repo = "https://raw.githubusercontent.com/gerandbromaster42/solar/refs/heads/main/"
     local success, content = pcall(game.HttpGet, game, repo..name)
     if success then return content else return print("getfile returned error \""..content.."\"") end
 end
@@ -1901,5 +1901,6 @@ cheat.ThemeManager:SetFolder('solar')
 cheat.SaveManager:SetFolder('solar')
 cheat.SaveManager:BuildConfigSection(ui.tabs.config)
 cheat.ThemeManager:ApplyToGroupbox(ui.box.themeconfig)
+
 
 cheat.EspLibrary.load()
